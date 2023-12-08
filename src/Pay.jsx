@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const STRIPE_PUBLISHABLE_KEY="pk_test_51NHRjRSEF1K1KdgAJ0cnspbMiSduDmgOBtbOc31cmzzBpy0dLyf3r6t9sas8XRQ6qBcNoqWyrL5xeswFr6U3SX6p00LGN9Kyjr";
+const STRIPE_PUBLISHABLE_KEY=process.emv.publishable_key;
 
 export const Pay = () => {
     const [stripeToken, setStripeToken] = useState(null);
